@@ -13,6 +13,7 @@ import Marker from '@editorjs/marker'
 import CheckList from '@editorjs/checklist'
 import Delimiter from '@editorjs/delimiter'
 import InlineCode from '@editorjs/inline-code'
+import Introduction from './customPlugins/introduction/introduction'
 
 const customTools = {
   embed: Embed,
@@ -65,6 +66,10 @@ const customTools = {
   },
   delimiter: Delimiter,
   inlineCode: InlineCode,
+  introduction: {
+    class: Introduction,
+    inlineToolbar: true,
+  },
 }
 
 export default customTools
